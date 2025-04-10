@@ -712,55 +712,106 @@ footer {
 }
 
 /* ============================ */
-/* 📱 Responsive - Sobre Mí ↓768px */
+/* 📱 Responsive - Sobre Mí ↓768px (versión compacta) */
 /* ============================ */
 @media (max-width: 768px) {
     #mainSobreMi {
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-        align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 0.5rem;
+      align-items: center;
     }
-
+  
     .divSobreMi,
     .divSobreMi2,
-    .divContacto {
-        width: 90%;
-        margin: 1rem auto;
+    .divContacto,
+    .divFormulario {
+      width: 100% !important;
+      margin: 0.5rem 0;
+      padding: 0 0.8rem;
+      box-sizing: border-box;
     }
-
+  
     #contenedorEstudiosExperiencia {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
     }
-}
-
-/* ============================ */
-/* 📱 Responsive - Sobre Mí ↓480px */
-/* ============================ */
-@media (max-width: 480px) {
-    .tituloSobreMi {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .encabezado {
-        font-size: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+  
     input,
-    .areaTexto {
-        font-size: 1rem;
-    }
-
+    .nombreApellido,
+    .email,
+    .asunto,
+    .areaTexto,
+    #botonFormulario,
     .botonPaginaSobreMi {
-        width: 100%;
-        margin: 1rem 0;
+      width: 100% !important;
+      box-sizing: border-box;
+      margin-bottom: 0.5rem;
+      height: 40px;
+      font-size: 0.95rem;
+      display: block;
     }
-}
-
+  
+    .areaTexto {
+      height: 120px;
+      resize: none;
+    }
+  
+    #botonFormulario {
+      float: none;
+      margin-top: 0.8rem;
+      height: 45px;
+    }
+  }
+  
+  /* ============================ */
+  /* 📱 Responsive - Sobre Mí ↓480px (aún más compacto) */
+  /* ============================ */
+  @media (max-width: 480px) {
+    .tituloSobreMi {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 0.8rem;
+    }
+  
+    .encabezado {
+      font-size: 0.95rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+  
+    input,
+    .nombreApellido,
+    .email,
+    .asunto,
+    .areaTexto,
+    #botonFormulario,
+    .botonPaginaSobreMi {
+      width: 100% !important;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      margin-bottom: 0.5rem;
+      height: 38px;
+    }
+  
+    .areaTexto {
+      height: 100px;
+    }
+  
+    .divFormulario {
+      width: 100%;
+      padding: 0 0.8rem;
+    }
+  
+    #botonFormulario {
+      float: none;
+      height: 42px;
+      margin-top: 0.8rem;
+    }
+  }
+  
 /* ============================ */
 /* 📱 Responsive - Footer ↓768px */
 /* ============================ */
