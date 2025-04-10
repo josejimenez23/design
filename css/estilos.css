@@ -726,7 +726,7 @@ footer {
     .divSobreMi2,
     .divContacto,
     .divFormulario {
-      width: 100% !important;
+      width: 100%;
       margin: 0.5rem 0;
       padding: 0 0.8rem;
       box-sizing: border-box;
@@ -745,23 +745,29 @@ footer {
     .areaTexto,
     #botonFormulario,
     .botonPaginaSobreMi {
-      width: 100% !important;
+      width: 100%; 
       box-sizing: border-box;
       margin-bottom: 0.5rem;
-      height: 40px;
-      font-size: 0.95rem;
-      display: block;
+      padding: 0.8rem; 
+      font-size: 1rem;
+      border: 1px solid #ccc; 
+      border-radius: 5px;  
     }
   
     .areaTexto {
-      height: 120px;
+      min-height: 120px;
       resize: none;
     }
   
     #botonFormulario {
-      float: none;
       margin-top: 0.8rem;
-      height: 45px;
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+      background-color: #333;  
+      color: white;
+      border: none;
+      border-radius: 5px;  
     }
   }
   
@@ -789,15 +795,18 @@ footer {
     .areaTexto,
     #botonFormulario,
     .botonPaginaSobreMi {
-      width: 100% !important;
+      width: 100%; 
       font-size: 0.95rem;
       box-sizing: border-box;
       margin-bottom: 0.5rem;
-      height: 38px;
+      padding: 0.8rem;
+      min-height: 38px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
   
     .areaTexto {
-      height: 100px;
+      min-height: 100px;
     }
   
     .divFormulario {
@@ -806,11 +815,17 @@ footer {
     }
   
     #botonFormulario {
-      float: none;
-      height: 42px;
       margin-top: 0.8rem;
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
     }
   }
+  
   
 /* ============================ */
 /* 📱 Responsive - Footer ↓768px */
