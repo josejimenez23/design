@@ -557,8 +557,9 @@ footer {
   
     #contenedorEnlacesHeader {
       display: flex;
-      flex-direction: column; /* Los enlaces se mostrarán verticalmente */
-      width: 100%; /* Ocupa todo el ancho de la pantalla */
+      flex-direction: column; 
+      width: 100%; 
+      background-color: crimson;
       text-align: center;
     }
   
@@ -578,16 +579,16 @@ footer {
       transition: background-color 0.3s, color 0.3s;
     }
   
-    .enlacesPagina:hover {
+/*     .enlacesPagina:hover {
       background-color: crimson;
       color: white;
       border-radius: 5px;
-    }
+    } */
   
-    #divCopy {
+/*     #divCopy {
       justify-content: center;
       text-align: center;
-    }
+    } */
   }
   
   /* ============================ */
@@ -610,7 +611,7 @@ footer {
       margin-left: 0;
       font-size: 1.1rem;
       padding: 1rem;
-      width: 100%; /* Los enlaces ocupan todo el ancho */
+      width: 100%; 
       text-align: center;
       text-transform: uppercase;
     }
@@ -623,10 +624,10 @@ footer {
       font-size: 1rem;
     }
   
-    #divCopy {
+/*     #divCopy {
       justify-content: center;
       text-align: center;
-    }
+    } */
   }
 
 /* ============================ */
