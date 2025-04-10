@@ -548,65 +548,86 @@ footer {
 /* ============================ */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
     }
-
+  
     #contenedorEnlacesHeader {
-        flex-direction: column;
+      display: flex;
+      flex-direction: column; /* Los enlaces se mostrarán verticalmente */
+      width: 100%; /* Ocupa todo el ancho de la pantalla */
+      text-align: center;
     }
-
-    header div {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
+  
     .listaPrincipal {
-        flex-direction: row;
-        gap: 1.5rem;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
     }
-
+  
     .enlacesPagina {
-        margin-left: 0;
+      margin-left: 0;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      transition: background-color 0.3s, color 0.3s;
     }
-
+  
+    .enlacesPagina:hover {
+      background-color: crimson;
+      color: white;
+      border-radius: 5px;
+    }
+  
     #divCopy {
-        justify-content: center;
+      justify-content: center;
+      text-align: center;
     }
-}
-
-/* ============================ */
-/* 📱 Responsive - header - Móviles ↓480px */
-/* ============================ */
-@media (max-width: 480px) {
+  }
+  
+  /* ============================ */
+  /* 📱 Responsive - header - Móviles ↓480px */
+  /* ============================ */
+  @media (max-width: 480px) {
     header {
-        padding: 1rem;
-        gap: 1rem;
+      padding: 1rem;
+      gap: 1rem;
+      align-items: center;
     }
-
+  
     .listaPrincipal {
-        flex-direction: row;
-        gap: 1rem;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
     }
-
+  
     .enlacesPagina {
-        margin-left: 10px;
+      margin-left: 0;
+      font-size: 1.1rem;
+      padding: 1rem;
+      width: 100%; /* Los enlaces ocupan todo el ancho */
+      text-align: center;
+      text-transform: uppercase;
     }
-
+  
     header h3 a {
-        font-size: 1.4rem;
+      font-size: 1.4rem;
     }
-
+  
     .enlacesPagina {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     #divCopy {
-        justify-content: center;
+      justify-content: center;
+      text-align: center;
     }
-}
+  }
 
 /* ============================ */
 /* 📱 Responsive - Página Principal ↓768px */
