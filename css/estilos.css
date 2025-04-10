@@ -99,41 +99,7 @@ li {
     color: crimson;
 }
 
-/* Estilos del footer */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-top: auto;
-    padding: 1rem;
-    width: 100%;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-}
 
-
-.divFooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 1rem;
-}
-
-.enlacesFooter {
-    color: #0f0f0f;
-    text-decoration: none;
-    margin-left: 15px;
-    transition: color 0.3s;
-}
-
-.enlacesFooter:visited {
-    color: #0f0f0f;
-    opacity: 0.8;
-}
-
-.enlacesFooter:hover {
-    color: crimson;
-}
 #divCopy{
     display: flex;
     justify-content: flex-end;
@@ -541,3 +507,309 @@ input {
 
 
 
+/* Estilos del footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: auto;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.divFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.enlacesFooter {
+    color: #0f0f0f;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.enlacesFooter:visited {
+    color: #0f0f0f;
+    opacity: 0.8;
+}
+
+.enlacesFooter:hover {
+    color: crimson;
+}
+
+/* ============================ */
+/* 📱 Responsive - header - Tablets ↓768px */
+/* ============================ */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #contenedorEnlacesHeader {
+        flex-direction: column;
+    }
+
+    header div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .listaPrincipal {
+        flex-direction: row;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enlacesPagina {
+        margin-left: 0;
+    }
+
+    #divCopy {
+        justify-content: center;
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - header - Móviles ↓480px */
+/* ============================ */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .listaPrincipal {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .enlacesPagina {
+        margin-left: 10px;
+    }
+
+    header h3 a {
+        font-size: 1.4rem;
+    }
+
+    .enlacesPagina {
+        font-size: 1rem;
+    }
+
+    #divCopy {
+        justify-content: center;
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - Página Principal ↓768px */
+/* ============================ */
+@media (max-width: 768px) {
+    #mainPage {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    #contenedorPaginaInicio {
+        width: 90vw;
+        height: auto;
+    }
+
+    #contenedorBotonPaginaPrincipal {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .botonPaginaPrincipal {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - Página Principal ↓480px */
+/* ============================ */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .tituloProyectos {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .botonPaginaPrincipal {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - Proyectos ↓768px */
+/* ============================ */
+@media (max-width: 768px) {
+    #mainProyectos {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .proyectos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagenes {
+        width: 100% !important;
+        height: auto !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - Proyectos ↓480px */
+/* ============================ */
+@media (max-width: 480px) {
+    .tituloProyectos {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .proyectos li {
+        font-size: 1.2rem;
+    }
+
+    .proyectos .describir {
+        font-size: 0.95rem;
+    }
+
+    .enlaceProyectos {
+        font-size: 1.2rem;
+    }
+}
+
+#portfolio {
+    width: 90vw;
+}
+
+.enlaceProyectosHr {
+    width: 50vw;
+}
+
+/* ============================ */
+/* 📱 Responsive - Sobre Mí ↓768px */
+/* ============================ */
+@media (max-width: 768px) {
+    #mainSobreMi {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .divSobreMi,
+    .divSobreMi2,
+    .divContacto {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    #contenedorEstudiosExperiencia {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - Sobre Mí ↓480px */
+/* ============================ */
+@media (max-width: 480px) {
+    .tituloSobreMi {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .encabezado {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input,
+    .areaTexto {
+        font-size: 1rem;
+    }
+
+    .botonPaginaSobreMi {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - Footer ↓768px */
+/* ============================ */
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        margin-top: 2rem; /* Ajustado el margen superior */
+        margin-bottom: 0; /* Asegurado de que no haya márgenes innecesarios */
+    }
+
+    #divCopy {
+        justify-content: center;
+    }
+
+    /* Evitar que el contenido se superponga al footer */
+    body {
+        padding-bottom: 0;
+    }
+
+    #mainPage,
+    #mainProyectos,
+    #mainSobreMi,
+    #sobremi {
+        padding-bottom: 0; /* Ajustado padding-bottom */
+    }
+}
+
+/* ============================ */
+/* 📱 Responsive - Footer ↓480px */
+/* ============================ */
+@media (max-width: 480px) {
+    footer {
+        position: relative;
+        width: 100%;
+        padding: 1rem 0;
+        background-color: #fff;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        /* margin-top: 100%; */
+    }
+}
