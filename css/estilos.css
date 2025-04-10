@@ -1,0 +1,543 @@
+/* Importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Funnel Display', sans-serif;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos del body */
+body {
+    background-color:white;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+    flex-wrap: wrap;
+}
+#contenedorEnlacesHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3 a {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    font-style: italic;
+}
+
+.listaPrincipal {
+    display: flex;
+    flex-direction: column;
+}
+.enlaceTitulo{
+    color: #0f0f0f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.enlaceTitulo:visited {
+    color: #0f0f0f;
+    opacity: 0.8;
+}
+.enlaceTitulo:hover{
+    color: crimson;
+}
+
+.enlacesPagina {
+    color: #0f0f0f;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.enlacesPagina:visited {
+    color: #0f0f0f;
+    opacity: 0.8;
+}
+
+.enlacesPagina:hover {
+    color: crimson;
+}
+
+/* Estilos del footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: auto;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.divFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.enlacesFooter {
+    color: #0f0f0f;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.enlacesFooter:visited {
+    color: #0f0f0f;
+    opacity: 0.8;
+}
+
+.enlacesFooter:hover {
+    color: crimson;
+}
+#divCopy{
+    display: flex;
+    justify-content: flex-end;
+}
+/* Estilos para la página de inicio */
+#mainPage {
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contenedorPaginaInicio {
+   width: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight:bolder;
+}
+#nombre{
+    color: crimson; 
+    border-bottom: 5px solid crimson;   
+}
+
+#mainPage p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    opacity: 0.8;
+    text-align: center;
+}
+#contenedorBotonPaginaPrincipal{
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.botonPaginaPrincipal {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 2.2rem;
+    border-radius: 20px;
+    background-color: #fefffc;
+    position: relative;
+    overflow: hidden;
+    color: #0f0f0f;
+    text-align: center;
+    line-height: 2.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.384);
+    transition: all 0.3s ease;
+    margin-left: 4rem;
+}
+
+.botonPaginaPrincipal::before {
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: crimson;
+    z-index: -1;
+    left: -100%;
+    width: 100%;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.botonPaginaPrincipal:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.botonPaginaPrincipal:hover {
+    color: #fefffc;
+}
+
+.botonPaginaPrincipal:visited {
+    color: #0f0f0f;
+    opacity: 0.8;
+}
+
+.botonPaginaPrincipal:hover {
+    color: #fefffc;
+    font-weight: bold;
+}
+
+/* Estilos para la página de Portfolio */
+#mainProyectos{
+    min-height: 100vh;
+    width: 95vw;
+}
+#portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tituloProyectos {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.enlaceProyectos {
+    display: flex;
+    justify-content: center;
+    color: #0f0f0f;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.proyectos {
+    display: flex;
+    align-items: center;
+    width: 95%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 10px 0;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    margin-bottom: 1rem; 
+}
+
+.proyectos:hover .imagenes {
+    visibility: visible;
+    width: 30%; 
+    height: 300px;
+}
+
+.imagenes {
+    width: 20%; 
+    height: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out; 
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 8px;
+    margin-left: 300px;
+}
+
+.enlaceProyectos:visited {
+    color: #0f0f0f;
+    opacity: 0.8;
+}
+
+.enlaceProyectos:hover {
+    color: crimson;
+    font-weight: bolder;
+}
+
+.proyectos li {
+    font-size: 1.5rem;
+}
+
+.proyectos .describir {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 10px;
+    color:#0f0f0f;
+}
+
+
+.enlaceProyectosHr{
+    width: 85vw;
+    margin-left: 5rem;
+}
+
+/*Estilos para la pagina sobre mi*/
+#mainSobreMi{
+    min-height: 88vh;
+    width: 95vw;
+}
+#sobremi{
+    position: relative;
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloSobreMi{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-align: left;
+    color: #0f0f0f;
+}
+#contenedorEstudiosExperiencia{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.divSobreMi{
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botonPaginaSobreMi {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 2.2rem;
+    border-radius: 20px;
+    background-color: #fefffc;
+    position: relative;
+    overflow: hidden;
+    color: #0f0f0f;
+    text-align: center;
+    line-height: 2.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.384);
+    transition: all 0.3s ease;
+    margin-left: 4rem;
+    float: right;
+}
+
+.botonPaginaSobreMi::before {
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: crimson;
+    z-index: -1;
+    left: -100%;
+    width: 100%;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.botonPaginaSobreMi:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.botonPaginaSobreMi:hover {
+    color: #fefffc;
+}
+
+.botonPaginaSobreMi:visited {
+    color: #0f0f0f;
+    opacity: 0.8;
+}
+
+.botonPaginaSobreMi:hover {
+    color: #fefffc;
+    font-weight: bold;
+}
+
+.divSobreMi2{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.divSobreMi2 .fecha{
+    display: flex;
+    justify-content: end;
+    float: right;
+    padding: 8px;
+    margin-bottom: 1rem;
+}
+hr{
+    margin: 1rem;
+}
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color:crimson;
+}
+.listaSobreMi li {
+    margin-bottom: 1rem; 
+}
+.divTextoSobreMi p{
+    text-align: left;
+  margin-bottom: 5px;
+}
+
+/* estilos pagina contacto */
+
+  
+  .contacto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+  
+  .contacto .icono {
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px; 
+  }
+  
+.divContacto{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.nombreApellido{
+    width: 100%;
+    background-color: #fefffc;
+    border: none;
+    height: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.email{
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.asunto{
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.areaTexto{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+#botonFormulario {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    float: right;
+    margin-top: 2rem;
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 20px;
+    background-color: #fefffc;
+    color: #0f0f0f;
+    font-weight: normal;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.384);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+
+#botonFormulario:hover {
+    color: crimson;
+    font-weight: bold;
+}
+
+
+
