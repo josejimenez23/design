@@ -765,51 +765,16 @@ footer {
 /* 📱 Responsive - Footer ↓768px */
 /* ============================ */
 @media (max-width: 768px) {
-    footer {
-        position: relative;
-        width: 100%;
-        padding: 1rem 0;
-        background-color: #fff;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        margin-top: 2rem; /* Ajustado el margen superior */
-        margin-bottom: 0; /* Asegurado de que no haya márgenes innecesarios */
-    }
-
-    #divCopy {
-        justify-content: center;
-    }
-
-    /* Evitar que el contenido se superponga al footer */
-    body {
-        padding-bottom: 0;
-    }
-
-    #mainPage,
-    #mainProyectos,
-    #mainSobreMi,
-    #sobremi {
-        padding-bottom: 0; /* Ajustado padding-bottom */
-    }
+   footer {
+    display: none;
+  }
 }
 
 /* ============================ */
 /* 📱 Responsive - Footer ↓480px */
 /* ============================ */
 @media (max-width: 480px) {
-    footer {
-        position: relative;
-        width: 100%;
-        padding: 1rem 0;
-        background-color: #fff;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        /* margin-top: 100%; */
-    }
+   footer {
+    display: none;
+  }
 }
