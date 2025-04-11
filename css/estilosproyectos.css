@@ -1,108 +1,16 @@
-#proyecto1 {
+  /* -------------------------------------------------------------------------- */
+  #proyecto2{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 5rem 2rem;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  /* Primer bloque: título y descripción */
-  #divPrimerBloque {
-    max-width: 800px;
-  }
-  
-  #divPrimerBloque h1 {
-    font-size: 2.5rem;
-    color: #033b61;
-    margin-bottom: 1rem;
-  }
-  
-  #divPrimerBloque p {
-    line-height: 1.8;
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  /* Imagen central del logo */
-  #divSegundoBloque {
-    width: 100%;
-    display: flex;
     justify-content: center;
-  }
-  
-  #divSegundoBloque img {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Imagen + texto */
-  #divTercerBloque {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    width: 100%;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    background-image: url(../image/proyecto-2/fondo.png);
   }
-  
-  #divTercerBloque img {
-    width: 45%;
-    min-width: 300px;
-    border-radius: 12px;
+  #divPrimerBloqueProyecto2 img{
+    width: 70vw;
   }
-  
-  #divTercerBloque p {
-    width: 45%;
-    min-width: 300px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444;
+
+  #divSegundoBloqueProyecto2 img{
+width: 100vw;
   }
-   #divCuartoBloque {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #divCuartoBloque img {
-    width: 90%;
-    min-width: 300px;
-    border-radius: 12px;
-  }
-  #divCuartoBloque p {
-    line-height: 1.8;
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  /* Responsive */
-  @media screen and (max-width: 768px) {
-    #divTercerBloque {
-      flex-direction: column;
-    }
-  
-    #divTercerBloque img,
-    #divTercerBloque p {
-      width: 90%;
-    }
-  
-    #divSegundoBloque img {
-      width: 90%;
-    }
-  
-    #divPrimerBloque {
-      width: 100%;
-    }
-  }
-  
